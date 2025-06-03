@@ -1,5 +1,3 @@
-
-
 let datos = [];
 let indiceEditar = null;
 
