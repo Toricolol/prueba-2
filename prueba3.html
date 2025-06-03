@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario de Validación</title>
-    <script src="script3.js"></script>
+    <style>
+        .error {
+            color: red;
+        }
+    </style>
 </head>
 <body>
 
     <form id="miFormulario">
-         <label for="telefono">Teléfono:</label>
+        <label for="telefono">Teléfono:</label>
         <input type="text" id="telefono" name="telefono">
         <span class="error" id="errorTelefono"></span>
         <br>
@@ -19,18 +23,21 @@
         <span class="error" id="errorPassword"></span>
         <br>
 
-        <button type="button" onclick="validar()" id="btn">Enviar</button>
+        <button type="button" onclick="validar()">Enviar</button>
     </form>
 
-    <form>
-        
-        <button type="button" onclick="validar()" id="btn">eliminar</button>
-        <button type="button" onclick="validar()" id="btn">cancelar eliminacion</button>
-    </form>
-    </form>
-
-    </form>
-
-    
     <table>
         <thead>
+            <tr>
+                <th>Teléfono</th>
+                <th>Contraseña</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody id="cuerpoTabla"></tbody>
+    </table>
+
+    <script src="script3.js"></script>
+</body>
+</html>
+
