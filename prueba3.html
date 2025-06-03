@@ -1,20 +1,16 @@
+@ -1,27 +1,36 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario de Validación</title>
-    <style>
-        .error {
-            color: red;
-            font-size: 14px;
-        }
-    </style>
+    
 </head>
 <body>
 
     <form id="miFormulario">
-        <label for="telefono">Teléfono:</label>
+         <label for="telefono">Teléfono:</label>
         <input type="text" id="telefono" name="telefono">
         <span class="error" id="errorTelefono"></span>
         <br>
@@ -24,21 +20,18 @@
         <span class="error" id="errorPassword"></span>
         <br>
 
-        <button type="button" onclick="validar()">Enviar</button>
+        <button type="button" onclick="validar()" id="btn">Enviar</button>
     </form>
 
+    <form>
+        
+        <button type="button" onclick="validar()" id="btn">eliminar</button>
+        <button type="button" onclick="validar()" id="btn">cancelar eliminacion</button>
+    </form>
+    </form>
+
+    </form>
+
+    
     <table>
         <thead>
-            <tr>
-                <th>Teléfono</th>
-                <th>Contraseña</th>
-                <th>Acciones</th>
-            </tr>
-        </thead>
-        <tbody id="cuerpoTabla">
-        </tbody>
-    </table>
-
-    <script src="script.js"></script>
-</body>
-</html>
