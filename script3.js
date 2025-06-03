@@ -1,5 +1,6 @@
 //telefono debe tener exactamente 8 digitos, no es obligatoria
 //contrasenia debe tener mas de 5 caracteres, es obligatoria
+//contrasenia debe tener mas de 5 caracteres, es obligatoria
 
 let datos = [];
 let indiceEditar = null;
@@ -12,7 +13,7 @@ function validar() {
     // Limpiar errores previos
     document.getElementById("errorTelefono").textContent = "";
     document.getElementById("errorPassword").textContent = "";
-    
+
     // Validaciones
     if (!/^\d{9}$/.test(telefono)) {
         document.getElementById("errorTelefono").textContent = "Teléfono debe tener 9 dígitos.";
